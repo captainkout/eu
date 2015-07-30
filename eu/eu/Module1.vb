@@ -1,10 +1,10 @@
-﻿Module Module1
+﻿Imports eulib
+Module Module1
 
-    Sub Main()
-		'nothing to see here
-		'more of nothing
-		'lets add a third line
-		'last line to add
-    End Sub
+	Sub Main()
+		Dim x As New eulib.eulib25
+		x.Main()
+
+	End Sub
 
 End Module

@@ -1,1 +1,13 @@
 C:\eu\eu\eu\bin\Debug\eu.exe.config
+C:\eu\eu\eu\bin\Debug\eu.exe
+C:\eu\eu\eu\bin\Debug\eu.pdb
+C:\eu\eu\eu\bin\Debug\eu.xml
+C:\eu\eu\eu\bin\Debug\eulib.dll
+C:\eu\eu\eu\bin\Debug\eulib.pdb
+C:\eu\eu\eu\bin\Debug\eulib.xml
+C:\eu\eu\eu\obj\Debug\eu.vbprojResolveAssemblyReference.cache
+C:\eu\eu\eu\obj\Debug\eu.Resources.resources
+C:\eu\eu\eu\obj\Debug\eu.vbproj.GenerateResource.Cache
+C:\eu\eu\eu\obj\Debug\eu.exe
+C:\eu\eu\eu\obj\Debug\eu.xml
+C:\eu\eu\eu\obj\Debug\eu.pdb
