@@ -1,6 +1,6 @@
 ﻿Imports System
 Public Class eulib24
-	Public numb As Integer
+
 
 	Public Sub Main()
 
