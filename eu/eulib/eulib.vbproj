@@ -67,6 +67,7 @@
   <ItemGroup>
     <Compile Include="eulib24.vb" />
     <Compile Include="eulib25.vb" />
+    <Compile Include="eulib26.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>

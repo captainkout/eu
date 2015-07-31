@@ -5,28 +5,28 @@ Public Class eulib24
 	Public Sub Main()
 
 		Dim done As Boolean = False
-		Dim str As New List(Of Integer) From {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+		Dim min_plus As New List(Of Integer) From {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
 		Dim pull As New List(Of Integer) From {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
-		Dim index = str.Count() - 1
+		Dim index = min_plus.Count() - 1
 		Dim count As Integer = 0
 
 		'write the first one
-		translate(str, pull, count)
+		translate(min_plus, pull, count)
 
-		While chk_all(str) = False
-			str(index) = str(index) + 1
-			While str(index) > str.Count() - 1 - index
-				str(index) = 0
+		While chk_all(min_plus) = False
+			min_plus(index) = min_plus(index) + 1
+			While min_plus(index) > min_plus.Count() - 1 - index
+				min_plus(index) = 0
 				'decrease index
 				index = index - 1
 				'increase value
-				str(index) = str(index) + 1
-				If str(index) <= str.Count() - 1 - index Then
-					translate(str, pull, count)
+				min_plus(index) = min_plus(index) + 1
+				If min_plus(index) <= min_plus.Count() - 1 - index Then
+					translate(min_plus, pull, count)
 				End If
 			End While
 
-			index = str.Count() - 1
+			index = min_plus.Count() - 1
 		End While
 
 		Console.ReadKey()
@@ -44,13 +44,13 @@ Public Class eulib24
 											 ByRef cnt As Integer)
 
 		Dim pulled As New List(Of Integer)(pull_from)
-		Dim print_string As String = ""
+		Dim print_min_plusing As String = ""
 		For i = 0 To arr.Count - 1
-			print_string = print_string + " " + CStr(pulled(arr(i)))
+			print_min_plusing = print_min_plusing + " " + CStr(pulled(arr(i)))
 			pulled.RemoveAt(arr(i))
 		Next
 		cnt = cnt + 1
-		Console.WriteLine("counted {0} --> perm {1}", cnt, print_string)
+		Console.WriteLine("counted {0} --> perm {1}", cnt, print_min_plusing)
 
 		If cnt = 1000000 Then
 			Console.ReadKey()

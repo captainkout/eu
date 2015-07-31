@@ -2,7 +2,7 @@
 Module Module1
 
 	Sub Main()
-		Dim x As New eulib.eulib25
+		Dim x As New eulib26
 		x.Main()
 
 	End Sub
