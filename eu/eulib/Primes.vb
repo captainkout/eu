@@ -23,7 +23,7 @@
 
 	End Sub
 
-	Public Function chk_prime(ByVal num As Integer)
+	Private Function chk_prime(ByVal num As Integer)
 		If primes.Contains(num) Then
 			Return True
 		Else
