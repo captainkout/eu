@@ -22,6 +22,17 @@
 		End If
 
 	End Sub
+	Public Sub Next_Prime()
+
+		Dim done As Boolean = False
+		Dim current_max As Integer = primes.Max()
+
+		While done = False
+			current_max = current_max + 1
+			done = chk_prime(current_max)
+		End While
+
+	End Sub
 
 	Private Function chk_prime(ByVal num As Integer)
 		If primes.Contains(num) Then

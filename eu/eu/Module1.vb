@@ -2,10 +2,12 @@
 Module Module1
 
 	Sub Main()
-		Dim x As New eulib26
-		x.Main()
-
-		'Console.WriteLine(String.Join(",", p.primes.ToArray()))
+		Dim x As New Primes
+		While x.primes.Max() < 100
+			x.Next_Prime()
+		End While
+		x.Next_Prime()
+		Console.WriteLine(String.Join(",", x.primes.ToArray()))
 		Console.ReadKey()
 
 	End Sub
