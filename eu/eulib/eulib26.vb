@@ -28,8 +28,6 @@ Public Class eulib26
 			If r = 0 Then
 				'do nothing
 			Else
-				'Console.WriteLine(CStr(n) & " --> first index of r " & CStr(remainders.IndexOf(r)) & " --> " & String.Join(",", remainders.ToArray()))
-				'Console.WriteLine(String.Join("", digits.GetRange(remainders.IndexOf(r), digits.Count - remainders.IndexOf(r)).ToArray()))
 
 				repeaters.Add(New Tuple(Of Integer, Integer)(n, String.Join("", digits.GetRange(remainders.IndexOf(r), digits.Count - remainders.IndexOf(r)).ToArray()).Length))
 			End If
