@@ -37,13 +37,14 @@
 	Private Function chk_prime(ByVal num As Integer)
 		If primes.Contains(num) Then
 			Return True
-		Else
-			For i = 0 To primes.Count - 1
-				If num Mod primes(i) = 0 Then
-					Return False
-				End If
-			Next
 		End If
+		Dim i = 0
+		While i < primes.Count() - 1 AndAlso Math.Pow(primes(i), 2) <= num
+			If num Mod primes(i) = 0 Then
+				Return False
+			End If
+			i = i + 1
+		End While
 		primes.Add(num)
 		Return True
 
