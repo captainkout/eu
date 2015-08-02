@@ -2,7 +2,7 @@
 Module Module1
 
 	Sub Main()
-		Dim x As New eulib30
+		Dim x As New eulib31
 		x.Main()
 		Console.WriteLine("fucking done!!")
 		Console.ReadKey()
