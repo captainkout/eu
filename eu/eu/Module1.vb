@@ -3,7 +3,7 @@ Module Module1
 
 	Sub Main()
 
-		Dim y As New eulib31
+		Dim y As New eulib32
 		y.Main()
 		Console.WriteLine("friggin done!!")
 		Console.ReadKey()
