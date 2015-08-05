@@ -74,6 +74,8 @@
     <Compile Include="eulib30.vb" />
     <Compile Include="eulib31.vb" />
     <Compile Include="eulib32.vb" />
+    <Compile Include="eulib33.vb" />
+    <Compile Include="eulib34.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
