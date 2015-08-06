@@ -22,6 +22,6 @@
 				examples.Add(p.primes(p.primes.Count() - 1))
 			End If
 		End While
-		Console.WriteLine("sum of truncatable primes is "examples.Sum())
+		Console.WriteLine("sum of truncatable primes is ", examples.Sum())
 	End Sub
 End Class

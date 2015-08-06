@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9B84E5EA-24E9-4EB1-909D-AAB4B2E2EC7A}</ProjectGuid>
+    <ProjectGuid>{F47E5C85-91B9-48CB-A486-CC5024D1AF99}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>eulib</RootNamespace>
-    <AssemblyName>eulib</AssemblyName>
+    <RootNamespace>eulib40_</RootNamespace>
+    <AssemblyName>eulib40+</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Windows</MyType>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
@@ -18,7 +18,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>eulib.xml</DocumentationFile>
+    <DocumentationFile>eulib40+.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,40025,40026,40027,40028,40031,42030,42104,42108,42109</NoWarn>
     <DefineConstants>WPF=True,SILVERLIGHT=False</DefineConstants>
   </PropertyGroup>
@@ -28,7 +28,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>eulib.xml</DocumentationFile>
+    <DocumentationFile>eulib40+.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,40025,40026,40027,40028,40031,42030,42104,42108,42109</NoWarn>
     <DefineConstants>WPF=True,SILVERLIGHT=False</DefineConstants>
   </PropertyGroup>
@@ -47,7 +47,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -65,22 +64,8 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="eulib24.vb" />
-    <Compile Include="eulib25.vb" />
-    <Compile Include="eulib26.vb" />
-    <Compile Include="eulib27.vb" />
-    <Compile Include="eulib28.vb" />
-    <Compile Include="eulib29.vb" />
-    <Compile Include="eulib30.vb" />
-    <Compile Include="eulib31.vb" />
-    <Compile Include="eulib32.vb" />
-    <Compile Include="eulib33.vb" />
-    <Compile Include="eulib34.vb" />
-    <Compile Include="eulib35.vb" />
-    <Compile Include="eulib36.vb" />
-    <Compile Include="eulib37.vb" />
-    <Compile Include="eulib38.vb" />
-    <Compile Include="eulib39.vb" />
+    <Compile Include="Class1.vb" />
+    <Compile Include="eulib40.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -96,7 +81,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Primes.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -116,9 +100,6 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -49,4 +49,28 @@
 		Return True
 
 	End Function
+	Public Sub sieve(ByVal max As Integer)
+		primes.Clear()
+		Dim bitarr As New BitArray(max + 1, True)
+
+		bitarr(0) = False
+		bitarr(1) = False
+		bitarr(2) = True
+
+
+		For i = 2 To Math.Ceiling(Math.Sqrt(max + 1))
+			If bitarr(i) = True Then
+				For j = i * 2 To max / i Step i
+					bitarr(j) = False
+				Next
+			End If
+		Next
+
+		For i = 3 To max
+			If bitarr(i) = True Then
+				primes.Add(i)
+			End If
+		Next
+
+	End Sub
 End Class

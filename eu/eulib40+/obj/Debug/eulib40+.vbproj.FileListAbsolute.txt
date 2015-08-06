@@ -1,0 +1,2 @@
+C:\eu\eu\eulib40+\obj\Debug\eulib40_.Resources.resources
+C:\eu\eu\eulib40+\obj\Debug\eulib40+.vbproj.GenerateResource.Cache
