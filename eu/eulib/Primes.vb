@@ -39,7 +39,7 @@
 			Return True
 		End If
 		Dim i = 0
-		While i < primes.Count() - 1 AndAlso Math.Pow(primes(i), 2) <= num
+		While i < primes.Count() - 1 AndAlso i <= Math.Floor(Math.Sqrt(num))
 			If num Mod primes(i) = 0 Then
 				Return False
 			End If
