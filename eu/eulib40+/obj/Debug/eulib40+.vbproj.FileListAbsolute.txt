@@ -1,2 +1,8 @@
 C:\eu\eu\eulib40+\obj\Debug\eulib40_.Resources.resources
 C:\eu\eu\eulib40+\obj\Debug\eulib40+.vbproj.GenerateResource.Cache
+C:\eu\eu\eulib40+\bin\Debug\eulib40+.dll
+C:\eu\eu\eulib40+\bin\Debug\eulib40+.pdb
+C:\eu\eu\eulib40+\bin\Debug\eulib40+.xml
+C:\eu\eu\eulib40+\obj\Debug\eulib40+.dll
+C:\eu\eu\eulib40+\obj\Debug\eulib40+.xml
+C:\eu\eu\eulib40+\obj\Debug\eulib40+.pdb

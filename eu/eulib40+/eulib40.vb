@@ -7,7 +7,7 @@
 			numstr.Append(CStr(i))
 			i = i + 1
 		End While
-		Dim tot As System.Numerics.BigInteger = 1
+		Dim tot As Integer = 1
 		For i = 0 To 6
 			tot = tot * Val(numstr(10 ^ i))
 		Next
