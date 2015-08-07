@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F47E5C85-91B9-48CB-A486-CC5024D1AF99}</ProjectGuid>
+    <ProjectGuid>{B12EBA91-85E1-4584-9246-C3B5F2D88CD3}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>eulib40_</RootNamespace>
-    <AssemblyName>eulib40+</AssemblyName>
+    <RootNamespace>eulib40_49</RootNamespace>
+    <AssemblyName>eulib40-49</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Windows</MyType>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
@@ -18,7 +18,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>eulib40+.xml</DocumentationFile>
+    <DocumentationFile>eulib40-49.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,40025,40026,40027,40028,40031,42030,42104,42108,42109</NoWarn>
     <DefineConstants>WPF=True,SILVERLIGHT=False</DefineConstants>
   </PropertyGroup>
@@ -28,7 +28,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>eulib40+.xml</DocumentationFile>
+    <DocumentationFile>eulib40-49.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,40025,40026,40027,40028,40031,42030,42104,42108,42109</NoWarn>
     <DefineConstants>WPF=True,SILVERLIGHT=False</DefineConstants>
   </PropertyGroup>
@@ -64,8 +64,8 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.vb" />
     <Compile Include="eulib40.vb" />
+    <Compile Include="eulib41.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -81,6 +81,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Primes.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

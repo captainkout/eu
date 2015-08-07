@@ -8,17 +8,17 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("eulib40+")> 
+<Assembly: AssemblyTitle("eulib40-49")> 
 <Assembly: AssemblyDescription("")> 
 <Assembly: AssemblyCompany("Ministry of Finance")> 
-<Assembly: AssemblyProduct("eulib40+")> 
+<Assembly: AssemblyProduct("eulib40-49")> 
 <Assembly: AssemblyCopyright("Copyright © Ministry of Finance 2015")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("34801558-6f04-4268-aa61-0a3d9ba0974b")> 
+<Assembly: Guid("3f3ee38d-1d87-44e5-b281-811ac6a75e22")> 
 
 ' Version information for an assembly consists of the following four values:
 '

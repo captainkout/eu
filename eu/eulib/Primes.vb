@@ -60,13 +60,13 @@
 
 		For i = 2 To Math.Ceiling(Math.Sqrt(max + 1))
 			If bitarr(i) = True Then
-				For j = i * 2 To max / i Step i
+				For j = i * 2 To max Step i
 					bitarr(j) = False
 				Next
 			End If
 		Next
 
-		For i = 3 To max
+		For i = 2 To max
 			If bitarr(i) = True Then
 				primes.Add(i)
 			End If

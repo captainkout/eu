@@ -1,8 +1,9 @@
 ﻿
 Public Class eulib35
+
 	Public Sub Main()
 		Dim p As New Primes
-		p.To_Max(1000000)
+		p.sieve(1000000)
 		Dim examples As New List(Of Integer)
 
 		For Each prime In p.primes
@@ -20,7 +21,8 @@ Public Class eulib35
 				examples.Add(prime)
 			End If
 		Next
-		Console.WriteLine("total rot primes is {0}", examples.Count())
+		Console.WriteLine("total rot primes is {0}", examples.Count() + 1)
 
 	End Sub
+
 End Class

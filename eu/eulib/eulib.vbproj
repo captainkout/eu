@@ -120,6 +120,12 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eulib40-49\eulib40-49.vbproj">
+      <Project>{b12eba91-85e1-4584-9246-c3b5f2d88cd3}</Project>
+      <Name>eulib40-49</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

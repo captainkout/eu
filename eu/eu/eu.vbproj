@@ -107,6 +107,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\eulib40-49\eulib40-49.vbproj">
+      <Project>{b12eba91-85e1-4584-9246-c3b5f2d88cd3}</Project>
+      <Name>eulib40-49</Name>
+    </ProjectReference>
     <ProjectReference Include="..\eulib\eulib.vbproj">
       <Project>{9b84e5ea-24e9-4eb1-909d-aab4b2e2ec7a}</Project>
       <Name>eulib</Name>

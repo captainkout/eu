@@ -6,7 +6,7 @@
 		For i = 3 To 1999999 'this is last number less than facsum
 			If Valid(i) Then
 				curious.Add(i)
-				Console.WriteLine(i)
+				'Console.WriteLine(i)
 			End If
 		Next
 
