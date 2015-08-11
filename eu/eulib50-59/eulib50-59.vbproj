@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B12EBA91-85E1-4584-9246-C3B5F2D88CD3}</ProjectGuid>
+    <ProjectGuid>{1CD960AE-0F82-49A5-9BE8-EC7E569AE96A}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>eulib40_49</RootNamespace>
-    <AssemblyName>eulib40-49</AssemblyName>
+    <RootNamespace>eulib50_59</RootNamespace>
+    <AssemblyName>eulib50-59</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Windows</MyType>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -18,9 +18,8 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>eulib40-49.xml</DocumentationFile>
-    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,40025,40026,40027,40028,40031,42030,42104,42108,42109</NoWarn>
-    <DefineConstants>WPF=True,SILVERLIGHT=False</DefineConstants>
+    <DocumentationFile>eulib50-59.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -28,9 +27,8 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>eulib40-49.xml</DocumentationFile>
-    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,40025,40026,40027,40028,40031,42030,42104,42108,42109</NoWarn>
-    <DefineConstants>WPF=True,SILVERLIGHT=False</DefineConstants>
+    <DocumentationFile>eulib50-59.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
     <OptionExplicit>On</OptionExplicit>
@@ -47,7 +45,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -65,16 +62,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="eulib40.vb" />
-    <Compile Include="eulib41.vb" />
-    <Compile Include="eulib42.vb" />
-    <Compile Include="eulib43.vb" />
-    <Compile Include="eulib44.vb" />
-    <Compile Include="eulib45.vb" />
-    <Compile Include="eulib46.vb" />
-    <Compile Include="eulib47.vb" />
-    <Compile Include="eulib48.vb" />
-    <Compile Include="eulib49.vb" />
+    <Compile Include="eulib50.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -90,7 +78,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Primes.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -110,6 +97,16 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eulib40-49\eulib40-49.vbproj">
+      <Project>{b12eba91-85e1-4584-9246-c3b5f2d88cd3}</Project>
+      <Name>eulib40-49</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eu\eu.vbproj">
+      <Project>{df1a0504-d4f1-4145-8cc6-56f13241f1fc}</Project>
+      <Name>eu</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

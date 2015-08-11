@@ -4,7 +4,7 @@ Module Module1
 
 	Sub Main()
 
-		Dim y As New eulib47
+		Dim y As New eulib49
 		y.Main()
 		Console.WriteLine("friggin done!!")
 		Console.ReadKey()
