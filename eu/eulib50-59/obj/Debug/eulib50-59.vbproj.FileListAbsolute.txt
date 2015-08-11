@@ -1,0 +1,3 @@
+C:\eu\eu\eulib50-59\obj\Debug\eulib50-59.vbprojResolveAssemblyReference.cache
+C:\eu\eu\eulib50-59\obj\Debug\eulib50_59.Resources.resources
+C:\eu\eu\eulib50-59\obj\Debug\eulib50-59.vbproj.GenerateResource.Cache

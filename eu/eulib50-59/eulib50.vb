@@ -1,7 +1,7 @@
-﻿Imports eulib40_49.Primes
+﻿Imports eulib40_49
 Public Class eulib50
 	Public Sub Main()
-		Dim p As New eulib40_49.Primes
+		Dim p As New Primes
 		Dim parr As BitArray
 		parr = p.sieve(1000000)
 
