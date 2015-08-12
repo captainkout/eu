@@ -1,0 +1,8 @@
+C:\eu\eu\helper\bin\Debug\helper.dll
+C:\eu\eu\helper\bin\Debug\helper.pdb
+C:\eu\eu\helper\bin\Debug\helper.xml
+C:\eu\eu\helper\obj\Debug\helper.Resources.resources
+C:\eu\eu\helper\obj\Debug\helper.vbproj.GenerateResource.Cache
+C:\eu\eu\helper\obj\Debug\helper.dll
+C:\eu\eu\helper\obj\Debug\helper.xml
+C:\eu\eu\helper\obj\Debug\helper.pdb

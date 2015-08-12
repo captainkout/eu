@@ -3,6 +3,9 @@ C:\eu\eu\eu\bin\Debug\eu.exe
 C:\eu\eu\eu\bin\Debug\eu.pdb
 C:\eu\eu\eu\bin\Debug\eu.xml
 C:\eu\eu\eu\bin\Debug\eulib.dll
+C:\eu\eu\eu\bin\Debug\eulib40-49.dll
+C:\eu\eu\eu\bin\Debug\eulib40-49.pdb
+C:\eu\eu\eu\bin\Debug\eulib40-49.xml
 C:\eu\eu\eu\bin\Debug\eulib.pdb
 C:\eu\eu\eu\bin\Debug\eulib.xml
 C:\eu\eu\eu\obj\Debug\eu.vbprojResolveAssemblyReference.cache
@@ -11,6 +14,9 @@ C:\eu\eu\eu\obj\Debug\eu.vbproj.GenerateResource.Cache
 C:\eu\eu\eu\obj\Debug\eu.exe
 C:\eu\eu\eu\obj\Debug\eu.xml
 C:\eu\eu\eu\obj\Debug\eu.pdb
-C:\eu\eu\eu\bin\Debug\eulib40-49.dll
-C:\eu\eu\eu\bin\Debug\eulib40-49.pdb
-C:\eu\eu\eu\bin\Debug\eulib40-49.xml
+C:\eu\eu\eu\bin\Debug\eulib50-59.dll
+C:\eu\eu\eu\bin\Debug\helper.dll
+C:\eu\eu\eu\bin\Debug\eulib50-59.pdb
+C:\eu\eu\eu\bin\Debug\eulib50-59.xml
+C:\eu\eu\eu\bin\Debug\helper.pdb
+C:\eu\eu\eu\bin\Debug\helper.xml

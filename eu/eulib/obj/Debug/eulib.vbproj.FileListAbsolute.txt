@@ -1,12 +1,12 @@
 C:\eu\eu\eulib\bin\Debug\eulib.dll
 C:\eu\eu\eulib\bin\Debug\eulib.pdb
 C:\eu\eu\eulib\bin\Debug\eulib.xml
+C:\eu\eu\eulib\bin\Debug\eulib40-49.dll
+C:\eu\eu\eulib\bin\Debug\eulib40-49.pdb
+C:\eu\eu\eulib\bin\Debug\eulib40-49.xml
+C:\eu\eu\eulib\obj\Debug\eulib.vbprojResolveAssemblyReference.cache
 C:\eu\eu\eulib\obj\Debug\eulib.Resources.resources
 C:\eu\eu\eulib\obj\Debug\eulib.vbproj.GenerateResource.Cache
 C:\eu\eu\eulib\obj\Debug\eulib.dll
 C:\eu\eu\eulib\obj\Debug\eulib.xml
 C:\eu\eu\eulib\obj\Debug\eulib.pdb
-C:\eu\eu\eulib\bin\Debug\eulib40-49.dll
-C:\eu\eu\eulib\bin\Debug\eulib40-49.pdb
-C:\eu\eu\eulib\bin\Debug\eulib40-49.xml
-C:\eu\eu\eulib\obj\Debug\eulib.vbprojResolveAssemblyReference.cache
