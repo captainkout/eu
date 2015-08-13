@@ -27,6 +27,9 @@ Public Class eulib51
 							strb(j) = k.ToString()
 							strb(m) = k.ToString()
 
+							If count < k - 2 Then
+								Exit For
+							End If
 							If Val(strb.ToString()) > 100000 AndAlso parr(Val(strb.ToString())) = True Then
 								count = count + 1
 							End If
@@ -34,7 +37,7 @@ Public Class eulib51
 						If max < count AndAlso count = 8 Then
 							max = count
 							'print lowest prime
-							For k = 0 To 9
+							For k = 0 To 2 'must occur by two
 								strb(i) = k.ToString()
 								strb(j) = k.ToString()
 								strb(m) = k.ToString()
