@@ -6,36 +6,51 @@ Public Class eulib51
 		parr = p.sieve(1000000)
 
 		Dim primes As New List(Of String)
-		For i = 10000 To 99999
+		For i = 100000 To 999999
 			If parr(i) = True Then
-				primes.Add(i)
+				primes.Add(i.ToString())
 			End If
 		Next
 
-		Dim test As String = "56003"
-		For i = 0 To 4
-			For j = i + 1 To 4
-				If i = j Then
-					Continue For
-				End If
+		Dim count As Integer = 0
+		Dim max As Integer = 0
+		Dim x As Integer = 0
+		While x < primes.Count() AndAlso max < 8
+			For i = 0 To primes(x).Length() - 1
+				For j = i To primes(x).Length() - 1
+					For m = j To primes(x).Length() - 1
+						Dim strb As New System.Text.StringBuilder(primes(x))
 
-				Dim count As Integer = 0
-				For k = 0 To 9
-					If primes.Contains(test.Substring(0, i) & k.ToString() & test.Substring(i + 1, j - i - 1) & k.ToString() & test.Substring(j + 1)) Then
-						count = count + 1
-					End If
+						count = 0
+						For k = 0 To 9
+							strb(i) = k.ToString()
+							strb(j) = k.ToString()
+							strb(m) = k.ToString()
+
+							If Val(strb.ToString()) > 100000 AndAlso parr(Val(strb.ToString())) = True Then
+								count = count + 1
+							End If
+						Next
+						If max < count AndAlso count = 8 Then
+							max = count
+							'print lowest prime
+							For k = 0 To 9
+								strb(i) = k.ToString()
+								strb(j) = k.ToString()
+								strb(m) = k.ToString()
+
+								If Val(strb.ToString()) > 100000 AndAlso parr(strb.ToString()) = True Then
+									Console.WriteLine("lowest prime in first 8 group: {0}", strb.ToString())
+									Exit Sub
+								End If
+							Next
+						End If
+					Next
 				Next
 			Next
-		Next
 
+			x = x + 1
+		End While
 
 	End Sub
-	Public Function rep(ByVal num As String)
-		For Each digit In num
-			If Not num.IndexOf(digit) = num.LastIndexOf(digit) Then
-				Return True
-			End If
-		Next
-		Return False
-	End Function
 End Class

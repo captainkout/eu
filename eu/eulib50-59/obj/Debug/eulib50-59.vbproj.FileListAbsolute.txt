@@ -1,12 +1,12 @@
-C:\eu\eu\eulib50-59\obj\Debug\eulib50-59.vbprojResolveAssemblyReference.cache
-C:\eu\eu\eulib50-59\obj\Debug\eulib50_59.Resources.resources
-C:\eu\eu\eulib50-59\obj\Debug\eulib50-59.vbproj.GenerateResource.Cache
 C:\eu\eu\eulib50-59\bin\Debug\eulib50-59.dll
 C:\eu\eu\eulib50-59\bin\Debug\eulib50-59.pdb
 C:\eu\eu\eulib50-59\bin\Debug\eulib50-59.xml
 C:\eu\eu\eulib50-59\bin\Debug\helper.dll
 C:\eu\eu\eulib50-59\bin\Debug\helper.pdb
 C:\eu\eu\eulib50-59\bin\Debug\helper.xml
+C:\eu\eu\eulib50-59\obj\Debug\eulib50-59.vbprojResolveAssemblyReference.cache
+C:\eu\eu\eulib50-59\obj\Debug\eulib50_59.Resources.resources
+C:\eu\eu\eulib50-59\obj\Debug\eulib50-59.vbproj.GenerateResource.Cache
 C:\eu\eu\eulib50-59\obj\Debug\eulib50-59.dll
 C:\eu\eu\eulib50-59\obj\Debug\eulib50-59.xml
 C:\eu\eu\eulib50-59\obj\Debug\eulib50-59.pdb
