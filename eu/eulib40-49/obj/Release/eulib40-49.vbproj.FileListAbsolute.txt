@@ -1,0 +1,8 @@
+C:\eu\eu\eulib40-49\bin\Release\eulib40-49.dll
+C:\eu\eu\eulib40-49\bin\Release\eulib40-49.pdb
+C:\eu\eu\eulib40-49\bin\Release\eulib40-49.xml
+C:\eu\eu\eulib40-49\obj\Release\eulib40_49.Resources.resources
+C:\eu\eu\eulib40-49\obj\Release\eulib40-49.vbproj.GenerateResource.Cache
+C:\eu\eu\eulib40-49\obj\Release\eulib40-49.dll
+C:\eu\eu\eulib40-49\obj\Release\eulib40-49.xml
+C:\eu\eu\eulib40-49\obj\Release\eulib40-49.pdb

@@ -1,0 +1,12 @@
+C:\eu\eu\eulib50-59\bin\Release\eulib50-59.dll
+C:\eu\eu\eulib50-59\bin\Release\eulib50-59.pdb
+C:\eu\eu\eulib50-59\bin\Release\eulib50-59.xml
+C:\eu\eu\eulib50-59\bin\Release\helper.dll
+C:\eu\eu\eulib50-59\bin\Release\helper.pdb
+C:\eu\eu\eulib50-59\bin\Release\helper.xml
+C:\eu\eu\eulib50-59\obj\Release\eulib50-59.vbprojResolveAssemblyReference.cache
+C:\eu\eu\eulib50-59\obj\Release\eulib50_59.Resources.resources
+C:\eu\eu\eulib50-59\obj\Release\eulib50-59.vbproj.GenerateResource.Cache
+C:\eu\eu\eulib50-59\obj\Release\eulib50-59.dll
+C:\eu\eu\eulib50-59\obj\Release\eulib50-59.xml
+C:\eu\eu\eulib50-59\obj\Release\eulib50-59.pdb
