@@ -1,13 +1,14 @@
 ﻿Imports eulib
 Imports eulib40_49
 Imports eulib50_59
+Imports eulib60_69
 
 
 Module Module1
 
 	Sub Main()
 
-		Dim y As New eulib59
+		Dim y As New eulib60
 		GC.Collect()
 		GC.WaitForFullGCComplete()
 		GC.WaitForPendingFinalizers()
