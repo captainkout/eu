@@ -1,12 +1,10 @@
 ﻿Public Class eulib60
 	Public Sub Main()
 		Dim p As New helper.Primes
-		Dim max As Integer = 1000000
+		Dim max As Integer = 9999999
 		Dim parr As BitArray = p.sieve(max)
 		Dim pdic As New Dictionary(Of Integer, List(Of Integer))
 		Dim plst As New List(Of String)
-		Dim examples As New List(Of Integer)
-		Dim final As New List(Of Integer) From {0, 0, 0, 0}
 
 		For a = 0 To parr.Length() - 1
 			If parr(a) = True Then
@@ -35,6 +33,25 @@
 					End If
 				Else
 					Exit For
+				End If
+			Next
+		Next
+
+		For a = 0 To plst.Count() - 1
+			Dim pcount As New List(Of Integer) From {plst(a)}
+
+			For b = 0 To a
+				If pdic(pdic.Keys()(b)).Contains(plst(a)) Then
+					pcount.Add(pdic.Keys()(b))
+					If pcount.Count() = 5 Then
+						Dim tot As Integer = 0
+						For Each i In pcount
+							tot = tot + i
+							Console.Write(i & vbTab)
+						Next
+						Console.Write("sum:{0}", tot)
+						Exit Sub
+					End If
 				End If
 			Next
 		Next
