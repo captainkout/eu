@@ -19,45 +19,66 @@
 			End If
 		Next
 
+
+
 		For b = 0 To plst.Count() - 1
-			For c = b + 1 To plst.Count() - 1
-				Dim bc As String = Val(plst(b).ToString() & plst(c).ToString())
-				Dim cb As String = Val(plst(c).ToString() & plst(b).ToString())
-				If bc < max AndAlso cb < max Then
-					If parr(bc) = True AndAlso _
-					parr(cb) = True Then
-						If pdic.ContainsKey(plst(b)) = False Then
-							pdic(plst(b)) = New List(Of Integer)
-						End If
-						pdic(plst(b)).Add(plst(c))
-					End If
-				Else
-					Exit For
-				End If
-			Next
-		Next
+			If plst(b) > max Then
+				Exit Sub
+			Else
+				For c = b + 1 To plst.Count() - 1
+					Dim bc As String = Val(plst(b).ToString() & plst(c).ToString())
+					Dim cb As String = Val(plst(c).ToString() & plst(b).ToString())
+					If bc > max OrElse cb > max Then
+						Exit For
+					ElseIf parr(bc) = True AndAlso parr(cb) = True Then
+						For d = c + 1 To plst.Count() - 1
+							Dim bd As String = Val(plst(b).ToString() & plst(d).ToString())
+							Dim db As String = Val(plst(d).ToString() & plst(b).ToString())
+							Dim cd As String = Val(plst(c).ToString() & plst(d).ToString())
+							Dim dc As String = Val(plst(d).ToString() & plst(c).ToString())
+							If bd > max OrElse db > max OrElse cd > max OrElse dc > max Then
+								Exit For
+							ElseIf parr(bd) = True AndAlso parr(db) = True AndAlso parr(cd) = True AndAlso parr(dc) = True Then
+								For e = d + 1 To plst.Count() - 1
+									Dim be As String = Val(plst(b).ToString() & plst(e).ToString())
+									Dim eb As String = Val(plst(e).ToString() & plst(b).ToString())
+									Dim ce As String = Val(plst(c).ToString() & plst(e).ToString())
+									Dim ec As String = Val(plst(e).ToString() & plst(c).ToString())
+									Dim de As String = Val(plst(e).ToString() & plst(d).ToString())
+									Dim ed As String = Val(plst(d).ToString() & plst(e).ToString())
+									If be > max OrElse eb > max OrElse ce > max OrElse ec > max OrElse de > max OrElse ed > max Then
+										Exit For
+									ElseIf parr(be) = True AndAlso parr(eb) = True AndAlso parr(ce) = True _
+										AndAlso parr(ec) = True AndAlso parr(de) = True AndAlso parr(ed) = True Then
 
-		For a = 0 To plst.Count() - 1
-			Dim pcount As New List(Of Integer) From {plst(a)}
+										For f = e + 1 To plst.Count() - 1
+											Dim bf As String = Val(plst(b).ToString() & plst(f).ToString())
+											Dim fb As String = Val(plst(f).ToString() & plst(b).ToString())
+											Dim cf As String = Val(plst(c).ToString() & plst(f).ToString())
+											Dim fc As String = Val(plst(f).ToString() & plst(c).ToString())
+											Dim df As String = Val(plst(e).ToString() & plst(f).ToString())
+											Dim fd As String = Val(plst(f).ToString() & plst(e).ToString())
+											Dim ef As String = Val(plst(e).ToString() & plst(f).ToString())
+											Dim fe As String = Val(plst(f).ToString() & plst(e).ToString())
 
-			For b = 0 To a
-				If pdic(pdic.Keys()(b)).Contains(plst(a)) Then
-					pcount.Add(pdic.Keys()(b))
-					If pcount.Count() = 5 Then
-						Dim tot As Integer = 0
-						For Each i In pcount
-							tot = tot + i
-							Console.Write(i & vbTab)
+											'just do last shit
+
+
+										Next
+										max = Val(plst(b)) + Val(plst(c)) + Val(plst(d)) + Val(plst(e))
+										Console.WriteLine("a:{0} b:{1} c:{2} d:{3} e:{4} sum:{5}", "a isn't done", plst(b), plst(c), plst(d), plst(e), max)
+									End If
+								Next
+							End If
 						Next
-						Console.Write("sum:{0}", tot)
-						Exit Sub
 					End If
-				End If
-			Next
+				Next
+			End If
 		Next
+
 	End Sub
 	Public Function chk_left(ByVal prime As Integer, _
-													 ByVal parr As BitArray)
+							 ByVal parr As BitArray)
 
 
 
