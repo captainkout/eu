@@ -1,7 +1,7 @@
 ﻿Public Class eulib60
 	Public Sub Main()
 		Dim p As New helper.Primes
-		Dim max As Integer = 9999999
+		Dim max As Integer = 99999999
 		Dim parr As BitArray = p.sieve(max)
 		Dim pdic As New Dictionary(Of Integer, List(Of Integer))
 		Dim plst As New List(Of String)
@@ -56,17 +56,22 @@
 											Dim fb As String = Val(plst(f).ToString() & plst(b).ToString())
 											Dim cf As String = Val(plst(c).ToString() & plst(f).ToString())
 											Dim fc As String = Val(plst(f).ToString() & plst(c).ToString())
-											Dim df As String = Val(plst(e).ToString() & plst(f).ToString())
-											Dim fd As String = Val(plst(f).ToString() & plst(e).ToString())
+											Dim df As String = Val(plst(d).ToString() & plst(f).ToString())
+											Dim fd As String = Val(plst(f).ToString() & plst(d).ToString())
 											Dim ef As String = Val(plst(e).ToString() & plst(f).ToString())
 											Dim fe As String = Val(plst(f).ToString() & plst(e).ToString())
 
 											'just do last shit
+											If bf > max OrElse fb > max OrElse cf > max OrElse fc > max OrElse df > max OrElse fd > max _
+												OrElse ef > max OrElse fe > max Then
+												Exit For
+											ElseIf parr(bf) = True AndAlso parr(fb) = True AndAlso parr(cf) = True _
+												AndAlso parr(fc) = True AndAlso parr(df) = True AndAlso parr(fd) = True AndAlso parr(ef) = True AndAlso parr(fe) Then
 
-
+												max = Val(plst(b)) + Val(plst(c)) + Val(plst(d)) + Val(plst(e)) + Val(plst(f))
+												Console.WriteLine("a:{0} b:{1} c:{2} d:{3} e:{4} sum:{5}", plst(b), plst(c), plst(d), plst(e), plst(f), max)
+											End If
 										Next
-										max = Val(plst(b)) + Val(plst(c)) + Val(plst(d)) + Val(plst(e))
-										Console.WriteLine("a:{0} b:{1} c:{2} d:{3} e:{4} sum:{5}", "a isn't done", plst(b), plst(c), plst(d), plst(e), max)
 									End If
 								Next
 							End If
