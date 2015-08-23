@@ -20,3 +20,6 @@ C:\eu\eu\eu\obj\Release\eu.vbproj.GenerateResource.Cache
 C:\eu\eu\eu\obj\Release\eu.exe
 C:\eu\eu\eu\obj\Release\eu.xml
 C:\eu\eu\eu\obj\Release\eu.pdb
+C:\eu\eu\eu\bin\Release\eulib60-69.dll
+C:\eu\eu\eu\bin\Release\eulib60-69.pdb
+C:\eu\eu\eu\bin\Release\eulib60-69.xml

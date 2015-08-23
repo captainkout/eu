@@ -48,6 +48,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -66,6 +67,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="eulib60.vb" />
+    <Compile Include="eulib61.vb" />
+    <Compile Include="eulib62.vb" />
+    <Compile Include="eulib63.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
