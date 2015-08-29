@@ -82,6 +82,7 @@
     </Compile>
     <Compile Include="permuations.vb" />
     <Compile Include="Primes.vb" />
+    <Compile Include="speedtest.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

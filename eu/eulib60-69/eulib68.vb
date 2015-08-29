@@ -1,4 +1,4 @@
-﻿Public Class eulib67
+﻿Public Class eulib68
 	Public Sub Main()
 		Dim lst As New List(Of Integer) From {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
 		Dim max As Long = 0
