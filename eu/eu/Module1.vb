@@ -8,7 +8,7 @@ Module Module1
 
 	Sub Main()
 
-		Dim y As New eulib66
+		Dim y As New eulib67
 		GC.Collect()
 		GC.WaitForFullGCComplete()
 		GC.WaitForPendingFinalizers()
