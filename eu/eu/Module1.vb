@@ -9,14 +9,10 @@ Module Module1
 
 	Sub Main()
 
-		Dim y As New helper.speedtest
+		Dim y As New eulib69
 		GC.Collect()
 		GC.WaitForFullGCComplete()
 		GC.WaitForPendingFinalizers()
-
-		For a = 0 To 100000
-			y.arr.Add(a)
-		Next
 
 		Dim strt As Integer = System.Environment.TickCount()
 
