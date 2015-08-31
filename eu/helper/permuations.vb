@@ -49,4 +49,12 @@
 
 		Return darr
 	End Function
+	Public Function count_dig_tostr(ByVal num As Long)
+		Dim tmp As Array = count_dig(num)
+		Dim strReturn As String = ""
+		For Each item In tmp
+			strReturn = strReturn & item.ToString() & ","
+		Next
+		Return strReturn
+	End Function
 End Class

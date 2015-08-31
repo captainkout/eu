@@ -23,3 +23,6 @@ C:\eu\eu\eu\obj\Debug\eu.pdb
 C:\eu\eu\eu\bin\Debug\eulib60-69.dll
 C:\eu\eu\eu\bin\Debug\eulib60-69.pdb
 C:\eu\eu\eu\bin\Debug\eulib60-69.xml
+C:\eu\eu\eu\bin\Debug\eulib70-79.dll
+C:\eu\eu\eu\bin\Debug\eulib70-79.pdb
+C:\eu\eu\eu\bin\Debug\eulib70-79.xml

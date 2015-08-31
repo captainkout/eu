@@ -23,3 +23,6 @@ C:\eu\eu\eu\obj\Release\eu.pdb
 C:\eu\eu\eu\bin\Release\eulib60-69.dll
 C:\eu\eu\eu\bin\Release\eulib60-69.pdb
 C:\eu\eu\eu\bin\Release\eulib60-69.xml
+C:\eu\eu\eu\bin\Release\eulib70-79.dll
+C:\eu\eu\eu\bin\Release\eulib70-79.pdb
+C:\eu\eu\eu\bin\Release\eulib70-79.xml

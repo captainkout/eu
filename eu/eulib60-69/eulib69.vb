@@ -12,7 +12,7 @@
 		For a = 2 To parr.Count() - 1
 			If parr(a) = True Then
 				For b = a To parr.Count() - 1 Step a
-					rparr(b) = rparr(b) * (1 - 1 / a)
+					rparr(b) = rparr(b) * (a - 1) / a
 				Next
 			End If
 		Next

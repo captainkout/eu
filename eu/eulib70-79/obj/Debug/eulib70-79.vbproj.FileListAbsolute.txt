@@ -1,0 +1,12 @@
+C:\eu\eu\eulib70-79\bin\Debug\eulib70-79.dll
+C:\eu\eu\eulib70-79\bin\Debug\eulib70-79.pdb
+C:\eu\eu\eulib70-79\bin\Debug\eulib70-79.xml
+C:\eu\eu\eulib70-79\bin\Debug\helper.dll
+C:\eu\eu\eulib70-79\bin\Debug\helper.pdb
+C:\eu\eu\eulib70-79\bin\Debug\helper.xml
+C:\eu\eu\eulib70-79\obj\Debug\eulib70-79.vbprojResolveAssemblyReference.cache
+C:\eu\eu\eulib70-79\obj\Debug\eulib70_79.Resources.resources
+C:\eu\eu\eulib70-79\obj\Debug\eulib70-79.vbproj.GenerateResource.Cache
+C:\eu\eu\eulib70-79\obj\Debug\eulib70-79.dll
+C:\eu\eu\eulib70-79\obj\Debug\eulib70-79.xml
+C:\eu\eu\eulib70-79\obj\Debug\eulib70-79.pdb

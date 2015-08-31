@@ -9,3 +9,4 @@ C:\eu\eu\eulib60-69\obj\Release\eulib60-69.vbproj.GenerateResource.Cache
 C:\eu\eu\eulib60-69\obj\Release\eulib60-69.dll
 C:\eu\eu\eulib60-69\obj\Release\eulib60-69.xml
 C:\eu\eu\eulib60-69\obj\Release\eulib60-69.pdb
+C:\eu\eu\eulib60-69\obj\Release\eulib60-69.vbprojResolveAssemblyReference.cache

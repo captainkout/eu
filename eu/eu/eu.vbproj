@@ -119,6 +119,10 @@
       <Project>{cf68fa9a-7633-4b24-a79d-26a7e255dce3}</Project>
       <Name>eulib60-69</Name>
     </ProjectReference>
+    <ProjectReference Include="..\eulib70-79\eulib70-79.vbproj">
+      <Project>{16e5889f-555c-4ff4-8d5b-36035a051984}</Project>
+      <Name>eulib70-79</Name>
+    </ProjectReference>
     <ProjectReference Include="..\eulib\eulib.vbproj">
       <Project>{9b84e5ea-24e9-4eb1-909d-aab4b2e2ec7a}</Project>
       <Name>eulib</Name>
