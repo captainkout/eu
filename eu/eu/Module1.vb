@@ -4,7 +4,7 @@ Module Module1
 	Sub Main()
 		Dim tot As Long = 100000000
 
-		Dim y As New eulib70_79.eulib73
+		Dim y As New eulib70_79.eulib74
 
 		GC.Collect()
 		GC.WaitForFullGCComplete()
