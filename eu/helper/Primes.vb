@@ -1,4 +1,5 @@
-﻿Public Class Primes
+﻿Imports System.Threading
+Public Class Primes
 
 	Public Function sieve(ByVal max As Long) As BitArray
 		'Primes.Clear()
@@ -53,7 +54,7 @@
 		Next
 		Return plist
 	End Function
-	Public Function sieve_lst2(ByVal Max As Long) As List(Of Long)
+	Public Function sieve_lst2(ByVal Max As Double) As List(Of Long)
 		Dim bitarr As New BitArray(Math.Floor(Max / 3) + 1, True)
 		bitarr(0) = False
 
@@ -61,27 +62,28 @@
 		plist.Add(2)
 		plist.Add(3)
 
-		Dim x As Long = (bitarr.Count() - 1) / 2
-
-		For i = 1 To (bitarr.Count() - 1) / 2
+		For i As Long = 1 To (bitarr.Count() - 1) / 2
 			If bitarr(2 * i - 1) = True Then
 				plist.Add(6 * i - 1)
-				For j = 10 * i - 2 To bitarr.Count() - 4 * i Step 12 * i - 2
+				For j = 10 * i - 2 To bitarr.Count() - 1 Step 12 * i - 2
 					bitarr(j) = False
-					bitarr(j + 4 * i - 1) = False
+				Next
+				For j = 14 * i - 3 To bitarr.Count() - 1 Step 12 * i - 2
+					bitarr(j) = False
 				Next
 			End If
-
 			If bitarr(2 * i) = True Then
 				plist.Add(6 * i + 1)
-				For j = 10 * i + 1 To bitarr.Count() - 2 - 4 * i Step 12 * i + 2
+				For j = 22 * i + 3 To bitarr.Count() - 1 Step 12 * i + 2
 					bitarr(j) = False
-					bitarr(j + 4 * i + 1) = False
 				Next
-
+				For j = 14 * i + 2 To bitarr.Count() - 1 Step 12 * i + 2
+					bitarr(j) = False
+				Next
 			End If
 
 		Next
 		Return plist
 	End Function
+
 End Class
