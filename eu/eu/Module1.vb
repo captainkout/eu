@@ -4,7 +4,7 @@ Module Module1
 	Sub Main()
 
 
-		Dim y As New eulib70_79.eulib75
+		Dim y As New eulib70_79.eulib76
 
 		GC.Collect()
 		GC.WaitForFullGCComplete()
