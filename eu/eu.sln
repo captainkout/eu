@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "eu", "eu\eu.vbproj", "{DF1A0504-D4F1-4145-8CC6-56F13241F1FC}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "eulib", "eulib\eulib.vbproj", "{9B84E5EA-24E9-4EB1-909D-AAB4B2E2EC7A}"
@@ -16,6 +14,8 @@ EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "eulib60-69", "eulib60-69\eulib60-69.vbproj", "{CF68FA9A-7633-4B24-A79D-26A7E255DCE3}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "eulib70-79", "eulib70-79\eulib70-79.vbproj", "{16E5889F-555C-4FF4-8D5B-36035A051984}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "eulib80-89", "eulib80-89\eulib80-89.vbproj", "{93917138-F0D6-4519-9A7E-D04B25ED4851}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +51,10 @@ Global
 		{16E5889F-555C-4FF4-8D5B-36035A051984}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16E5889F-555C-4FF4-8D5B-36035A051984}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16E5889F-555C-4FF4-8D5B-36035A051984}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93917138-F0D6-4519-9A7E-D04B25ED4851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93917138-F0D6-4519-9A7E-D04B25ED4851}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93917138-F0D6-4519-9A7E-D04B25ED4851}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93917138-F0D6-4519-9A7E-D04B25ED4851}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

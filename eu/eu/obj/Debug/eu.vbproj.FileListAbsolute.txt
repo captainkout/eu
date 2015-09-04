@@ -26,3 +26,6 @@ C:\eu\eu\eu\bin\Debug\eulib60-69.xml
 C:\eu\eu\eu\bin\Debug\eulib70-79.dll
 C:\eu\eu\eu\bin\Debug\eulib70-79.pdb
 C:\eu\eu\eu\bin\Debug\eulib70-79.xml
+C:\eu\eu\eu\bin\Debug\eulib80-89.dll
+C:\eu\eu\eu\bin\Debug\eulib80-89.pdb
+C:\eu\eu\eu\bin\Debug\eulib80-89.xml
