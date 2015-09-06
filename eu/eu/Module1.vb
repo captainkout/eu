@@ -4,7 +4,7 @@ Module Module1
 	Sub Main()
 
 
-		Dim y As New eulib80_89.eulib80
+		Dim y As New eulib80_89.eulib81
 
 		GC.Collect()
 		GC.WaitForFullGCComplete()
@@ -17,16 +17,6 @@ Module Module1
 		Dim fin = System.Environment.TickCount()
 		Console.WriteLine("{0} ms", fin - strt)
 
-		GC.Collect()
-		GC.WaitForFullGCComplete()
-		GC.WaitForPendingFinalizers()
-
-		strt = System.Environment.TickCount()
-
-		y.Main2()
-
-		fin = System.Environment.TickCount()
-		Console.WriteLine("{0} ms", fin - strt)
 		Console.ReadKey()
 
 	End Sub

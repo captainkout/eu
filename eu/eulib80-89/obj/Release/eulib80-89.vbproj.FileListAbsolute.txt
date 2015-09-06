@@ -1,0 +1,8 @@
+C:\eu\eu\eulib80-89\bin\Release\eulib80-89.dll
+C:\eu\eu\eulib80-89\bin\Release\eulib80-89.pdb
+C:\eu\eu\eulib80-89\bin\Release\eulib80-89.xml
+C:\eu\eu\eulib80-89\obj\Release\eulib80_89.Resources.resources
+C:\eu\eu\eulib80-89\obj\Release\eulib80-89.vbproj.GenerateResource.Cache
+C:\eu\eu\eulib80-89\obj\Release\eulib80-89.dll
+C:\eu\eu\eulib80-89\obj\Release\eulib80-89.xml
+C:\eu\eu\eulib80-89\obj\Release\eulib80-89.pdb
