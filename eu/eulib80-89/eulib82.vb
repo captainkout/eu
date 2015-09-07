@@ -1,5 +1,4 @@
-﻿Imports System.IO
-Public Class eulib81
+﻿Public Class eulib82
 	Public Sub Main()
 		'Dim f As New System.IO.StreamReader("c:\users\chris\downloads\test81.txt")
 		'Dim f As New System.IO.StreamReader("c:\users\chris\downloads\p081_matrix.txt")
@@ -30,20 +29,29 @@ Public Class eulib81
 				clarr(x, y) = c
 			Next
 		Next
-		'set entry 
-		clarr(0, 80).original = 0
-		clarr(0, 80).value = 0
-		'set exit
-		clarr(81, 1).original = 0
-		clarr(81, 1).value = 0
+
+		For y = 1 To clarr.GetUpperBound(1) - 1
+			'left edge
+			clarr(0, y).value = 0
+			clarr(0, y).original = 0
+			'right edge
+			clarr(clarr.GetUpperBound(1), y).value = 0
+			clarr(clarr.GetUpperBound(1), y).original = 0
+		Next
+
 
 		While chk_changed(clarr)
 			'start at bottom right
 			For x = clarr.GetUpperBound(0) - 1 To 0 Step -1
 				For y = 1 To clarr.GetUpperBound(1) - 1
-					If clarr(x, y).value <> clarr(x, y).original + Math.Min(clarr(x, y - 1).value, clarr(x + 1, y).value) Then
+					If clarr(x, y).value <> clarr(x, y).original + _
+						Math.Min(clarr(x + 1, y).value, _
+						Math.Min(clarr(x, y - 1).value, clarr(x, y + 1).value)) Then
+
 						clarr(x, y).changed = True
-						clarr(x, y).value = clarr(x, y).original + Math.Min(clarr(x, y - 1).value, clarr(x + 1, y).value)
+						clarr(x, y).value = clarr(x, y).original + _
+							Math.Min(clarr(x + 1, y).value, _
+							Math.Min(clarr(x, y - 1).value, clarr(x, y + 1).value))
 					Else : clarr(x, y).changed = False
 					End If
 
@@ -51,7 +59,13 @@ Public Class eulib81
 			Next
 		End While
 
-		Console.WriteLine(clarr(0, 80).value)
+		Dim min As Integer = 0
+		For y = 1 To clarr.GetUpperBound(1) - 1
+			If min = 0 OrElse min > clarr(1, y).value Then
+				min = clarr(1, y).value
+			End If
+		Next
+		Console.WriteLine(min)
 
 	End Sub
 	Public Class coord
