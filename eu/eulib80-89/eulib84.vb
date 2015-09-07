@@ -3,6 +3,8 @@ Public Class eulib84
 	Public Property r As New Random
 	Public Property doubles As Integer = 0
 	Public Property position As Integer = 0
+	Public Property cc As Integer = 0
+	Public Property ch As Integer = 0
 
 	Public Sub Main()
 		Dim Rand As New Random
@@ -16,7 +18,7 @@ Public Class eulib84
 			count(position) = count(position) + 1
 		Next
 
-		'find max
+		'consume lst and get max
 		While count.Max > 0
 			Console.WriteLine(count.IndexOf(count.Max()))
 			count(count.IndexOf(count.Max())) = 0
@@ -25,8 +27,8 @@ Public Class eulib84
 	End Sub
 
 	Public Sub Move()
-		Dim d1 As Integer = r.Next(1, 6)
-		Dim d2 As Integer = r.Next(1, 6)
+		Dim d1 As Integer = r.Next(4) + 1
+		Dim d2 As Integer = r.Next(4) + 1
 
 		If d1 = d2 Then
 			doubles = doubles + 1
@@ -37,31 +39,41 @@ Public Class eulib84
 		If doubles >= 3 Then
 			position = 10
 			doubles = 0
+			Exit Sub
 		End If
+
 		position = (position + d1 + d2) Mod 40
-		While position = 2 OrElse position = 17 OrElse position = 33 OrElse _
-			position = 7 OrElse position = 22 OrElse position = 36 OrElse position = 30
-			Select Case True
-				Case position = 2 OrElse position = 17 OrElse position = 33
+		Select Case True
+			Case position = 2 OrElse position = 17 OrElse position = 33
+				DrawCC()
+			Case position = 7 OrElse position = 22
+				DrawChance()
+			Case position = 36
+				DrawChance()
+				If position = 33 Then
 					DrawCC()
-				Case position = 7 OrElse position = 22 OrElse position = 36
-					DrawChance()
-				Case position = 30
-					position = 10
-			End Select
-		End While
+				End If
+			Case position = 30
+				position = 10
+			Case Else
+				Exit Sub
+		End Select
 	End Sub
 	Public Sub DrawCC()
-		Dim x As Integer = r.Next(1, 16)
+		cc = (cc + 1) Mod 16
+		Dim x As Integer = cc
 		Select Case True
 			Case x = 1
 				position = 0
 			Case x = 2
 				position = 10
+			Case Else
+				Exit Sub
 		End Select
 	End Sub
 	Public Sub DrawChance()
-		Dim x As Integer = r.Next(1, 16)
+		ch = (ch + 1) Mod 16
+		Dim x As Integer = ch
 		Select Case True
 			Case x = 1
 				position = 0
@@ -76,23 +88,21 @@ Public Class eulib84
 			Case x = 6
 				position = 5
 			Case x = 7 OrElse x = 8
-				If position >= 35 AndAlso position < 5 Then
-					position = 5
-				ElseIf position >= 5 AndAlso position < 15 Then
+				If position >= 5 AndAlso position < 15 Then
 					position = 15
 				ElseIf position >= 15 AndAlso position < 25 Then
 					position = 25
-				ElseIf position >= 25 AndAlso position < 25 Then
-					position = 35
+				Else
+					position = 5
 				End If
 			Case x = 9
-				If position >= 12 OrElse position < 18 Then
+				If position = 22 Then
 					position = 18
 				Else
 					position = 12
 				End If
 			Case x = 10
-				position = (position - 3) Mod 40
+				position = position - 3
 		End Select
 	End Sub
 End Class
