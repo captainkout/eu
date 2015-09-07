@@ -13,7 +13,7 @@ Public Class eulib84
 			count.Add(0)
 		Next
 
-		For a = 0 To 100000000
+		For a = 0 To 10000000
 			Move()
 			count(position) = count(position) + 1
 		Next
@@ -27,8 +27,8 @@ Public Class eulib84
 	End Sub
 
 	Public Sub Move()
-		Dim d1 As Integer = r.Next(4) + 1
-		Dim d2 As Integer = r.Next(4) + 1
+		Dim d1 As Integer = r.Next(6) + 1
+		Dim d2 As Integer = r.Next(6) + 1
 
 		If d1 = d2 Then
 			doubles = doubles + 1
@@ -97,7 +97,7 @@ Public Class eulib84
 				End If
 			Case x = 9
 				If position = 22 Then
-					position = 18
+					position = 28
 				Else
 					position = 12
 				End If
