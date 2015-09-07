@@ -6,7 +6,7 @@
 
 		Dim fstr As String = f.ReadToEnd().Replace(vbLf, ",")
 		Dim farr() As String = fstr.Split(",")
-		'x+1 by y+1 for 2 extra rows/col full of 99999
+		'x+1 by y+1 for 2 extra rows/col full of huge numbers
 		Dim clarr(81, 81) As coord
 
 
