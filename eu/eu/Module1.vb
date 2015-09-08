@@ -4,18 +4,19 @@ Module Module1
 	Sub Main()
 
 
-		Dim y As New eulib80_89.eulib84
+		Dim y As New eulib80_89.eulib85
 
 		GC.Collect()
 		GC.WaitForFullGCComplete()
 		GC.WaitForPendingFinalizers()
 
-		Dim strt = System.Environment.TickCount()
+		Dim time As New System.Diagnostics.Stopwatch
+		time.Start()
 
 		y.Main()
 
-		Dim fin = System.Environment.TickCount()
-		Console.WriteLine("{0} ms", fin - strt)
+		time.Stop()
+		Console.WriteLine("{0} ms", time.ElapsedMilliseconds())
 
 		Console.ReadKey()
 

@@ -70,6 +70,7 @@
     <Compile Include="eulib82.vb" />
     <Compile Include="eulib83.vb" />
     <Compile Include="eulib84.vb" />
+    <Compile Include="eulib85.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
