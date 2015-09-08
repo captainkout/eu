@@ -10,12 +10,13 @@ Module Module1
 		GC.WaitForFullGCComplete()
 		GC.WaitForPendingFinalizers()
 
-		Dim strt = System.Environment.TickCount()
+		Dim time As New System.Diagnostics.Stopwatch
+		time.Start()
 
 		y.Main()
 
-		Dim fin = System.Environment.TickCount()
-		Console.WriteLine("{0} ms", fin - strt)
+		time.Stop()
+		Console.WriteLine("{0} ms", time.ElapsedMilliseconds())
 
 		Console.ReadKey()
 
