@@ -21,7 +21,6 @@
 			While tot <= closest_to
 				counter = counter + 1
 				tot = tot + lst(x) * counter
-
 			End While
 			prev = tot - lst(x) * counter
 
@@ -32,7 +31,7 @@
 			End If
 			If Math.Abs(prev - closest_to) <= closest Then
 				closest = Math.Abs(prev - closest_to)
-				Console.WriteLine(String.Join(vbTab, {"Under", "x:{0}", "y:{1}", "closest:{2}", "area:{3}", "tot:{4}", "grr:{5}"}), _
+				Console.WriteLine(String.Join(vbTab, {"UNDER", "x:{0}", "y:{1}", "closest:{2}", "area:{3}", "tot:{4}", "grr:{5}"}), _
 				  x, counter - 1, closest, x * (counter - 1), prev, Math.Abs(prev - closest_to))
 			End If
 		Next
