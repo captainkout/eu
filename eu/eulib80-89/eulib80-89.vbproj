@@ -72,6 +72,7 @@
     <Compile Include="eulib84.vb" />
     <Compile Include="eulib85.vb" />
     <Compile Include="eulib86.vb" />
+    <Compile Include="eulib87.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -106,6 +107,12 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\helper\helper.vbproj">
+      <Project>{465ac22e-1cfc-4903-94b9-d2ddc8e79cd4}</Project>
+      <Name>helper</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
