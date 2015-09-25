@@ -1,0 +1,8 @@
+C:\eu\eu\eulib90-99\bin\Debug\eulib90-99.dll
+C:\eu\eu\eulib90-99\bin\Debug\eulib90-99.pdb
+C:\eu\eu\eulib90-99\bin\Debug\eulib90-99.xml
+C:\eu\eu\eulib90-99\obj\Debug\eulib90_99.Resources.resources
+C:\eu\eu\eulib90-99\obj\Debug\eulib90-99.vbproj.GenerateResource.Cache
+C:\eu\eu\eulib90-99\obj\Debug\eulib90-99.dll
+C:\eu\eu\eulib90-99\obj\Debug\eulib90-99.xml
+C:\eu\eu\eulib90-99\obj\Debug\eulib90-99.pdb
